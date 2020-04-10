@@ -1,23 +1,28 @@
-* {
-    padding: 0;
-    margin: 0;
+* , *::after, *::before {
+    box-sizing: border-box;
 }
 
 body {
-    max-width: 1366px;
-    margin-right: auto;
-    margin-left: auto;
     font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1;
     color: #1A212F;
-    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+p {
+    margin: 10px 0;
+}
+
+h1, h3 {
+    margin: 5px 0 20px;
 }
 
 .list-reset {
@@ -31,9 +36,10 @@ a {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 15px;
 }
 
 .header-content {
@@ -58,17 +64,15 @@ a {
     color: #1A212F;
 }
 
-.baner-section {
-    position: relative;
+.banner {
     width: 100%;
-    height: 504px;
-    background: linear-gradient(89.92deg, rgba(240, 201, 113, 0.43) 40.86%, rgba(240, 201, 113, 0) 56.67%), linear-gradient(82.24deg, #F0C971 2.26%, rgba(240, 201, 113, 0) 52.92%), url("static/main-cat.png") no-repeat 50%;
+    padding: 134px 0;
+    background-size: cover;
+    background:  url("static/banner.jpg") no-repeat 50% 50%;
 }
 
-.baner-content {
-    position: absolute;
-    top: 25%;
-    left: 15%;
+.banner-content {
+    padding-left: 80px;
 }
 
 .button {
@@ -90,18 +94,22 @@ a {
     padding-right: 20px;
     font-weight: 500;
     font-size: 16px;
+    margin: 0;
 }
 
-.baner-title {
+.banner-location {
+    margin-top: 0;
+}
+
+.banner-title {
     font-family: "Rubik", sans-serif;
     font-weight: 500;
     font-size: 62px;
-    padding-bottom: 25px;
-    padding-top: 15px;
 }
 
-.baner-info {
+.banner-info {
     font-weight: 500;
     font-size: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
+
