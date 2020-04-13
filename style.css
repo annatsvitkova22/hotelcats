@@ -347,3 +347,74 @@ h1, h2, h3, h4 {
 .reviews .slick-dots {
     bottom: -55px;
 }
+
+.about-us {
+    /* max-width: 100%; */
+    display: flex;
+    margin-top: 54px;
+}
+
+.contacts {
+    max-width: 40%;
+    width: 100%;
+    background-color:#FAC663;
+    padding: 57px 0 70px;
+}
+
+.map {
+    max-width: 60%;
+    width: 100%;
+}
+
+.contacts-wrapper {
+    padding-left: 110px;
+}
+
+.contact-title {
+    text-align: start;
+    margin-bottom: 38px;
+}
+
+.contact-small-title {
+    font-size: 16px;
+    margin: 27px 0 8px;
+    line-height: 1;
+}
+
+.social-icon {
+    display: flex;
+}
+
+.icon {
+    margin-right: 20px;
+}
+
+.card-info:last-of-type  .contact-small-title{
+    margin-bottom: 14px;
+}
+
+.address {
+    font-style: normal;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 115px;
+}
+
+.top-footer {
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #8F8F8F;
+}
+
+.copyright-info {
+    margin: 17px 0;
+}

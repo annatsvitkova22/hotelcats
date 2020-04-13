@@ -19,7 +19,7 @@
                     </a>
                     <nav class="main-menu">
                         <ul class="menu-list list-reset">
-                            <li class="list-item"><a href="#" class="item-link">Почему мы?</a></li>
+                            <li class="list-item"><a href="#advantages" class="item-link">Почему мы?</a></li>
                             <li class="list-item"><a href="#" class="item-link">Номера</a></li>
                             <li class="list-item"><a href="#" class="item-link">Отзывы</a></li>
                             <li class="list-item"><a href="#" class="item-link">Как нас найти</a></li>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </section>  
-            <section class="advantages">
+            <section class="advantages" name="advantages">
                 <div class="container">
                     <h2 class="main-title">Почему мы?</h2>
                     <div class="advantages-content">
@@ -192,11 +192,75 @@
                         </div>
                     </div>
                 </div>
-            </section>      
+            </section>
+            <section class="about-us">
+                <div class="contacts">
+                    <div class="contacts-wrapper">
+                        <h2 class="main-title contact-title">Как нас найти</h2>
+                        <div class="card-info">
+                            <h6 class="contact-small-title">Адрес</h6>
+                            <address class="address">Санкт-Петербург,</address>
+                            <address class="address">ул Большая Конюшенная, д 19</address>
+                        </div>
+                        <div class="card-info">
+                            <h6 class="contact-small-title">Режим работы</h6>
+                            <p>Ежедневно, с 9:00 до 20:00</p>
+                        </div>
+                        <div class="card-info">
+                            <h6 class="contact-small-title">Телефон</h6>
+                            <tel>8 (800) 333-55-99</tel>
+                        </div>
+                        <div class="card-info">
+                            <h6 class="contact-small-title">E-mail</h6>
+                            <email class="">info@cat-hotel.ru</email>
+                        </div>
+                        <div class="card-info">
+                            <h6 class="contact-small-title">Социальные сети</h6>
+                            <div class="social-icon">
+                                <img class="icon" src="static/fb.svg" alt="facebook" />
+                                <img class="icon" src="static/ins.svg" alt="instagram" />
+                                <img class="icon" src="static/vk.svg" alt="vk" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map" id="map">
+                    
+                </div>
+            </section> 
         </main>
+        <footer>
+            <div class="top-footer">
+                <div class="footer-container">
+                    <div class="header-content">
+                        <a href="href" class="main-logo">
+                            <img src="static/logo.svg" alt="logo"/>
+                        </a>
+                        <nav class="main-menu">
+                            <ul class="menu-list list-reset">
+                                <li class="list-item"><a href="#" class="item-link">Почему мы?</a></li>
+                                <li class="list-item"><a href="#" class="item-link">Номера</a></li>
+                                <li class="list-item"><a href="#" class="item-link">Отзывы</a></li>
+                                <li class="list-item"><a href="#" class="item-link">Как нас найти</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="footer-container">
+                    <div class="copyright">
+                        <p class="copyright-info">© 2019 Все права защищены</p>
+                        <p class="copyright-info">Политика конфиденциальности</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD1YbgTbWtu8DSGdYpgJZ3ZBPGrVb1Hb8&callback=initMap">
+        </script>
     </body>
 </html>

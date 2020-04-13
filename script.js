@@ -36,3 +36,20 @@ $(document).ready(function(){
         ]
     });
 });
+
+
+function initMap() {
+    var directionsDisplay = new google.maps.DirectionsRenderer;
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: {lat: 59.9387942, lng: 30.3230833}
+    });
+    directionsDisplay.setMap(map);
+
+    new google.maps.Marker({
+        position: {lat: 59.9387942, lng: 30.3230833},
+        map: map,
+        icon: 'static/marker.svg',
+    });
+}
+
