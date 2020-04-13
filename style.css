@@ -69,7 +69,7 @@ h1, h2, h3, h4 {
 }
 
 .banner {
-    padding: 149px 0 152px;
+    padding: 149px 0 153px;
     background-size: cover;
     background-position: 50% 100%;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ h1, h2, h3, h4 {
     height: 50px;
     display: flex;
     align-items: center;
-    padding: 0 9px 0 30px;
+    padding: 0 9px 0 27px;
 }
 
 .button-white {
@@ -105,7 +105,7 @@ h1, h2, h3, h4 {
 
 .button-content {
     font-family: "Lato", sans-serif;
-    padding-right: 17px;
+    padding-right: 19px;
     font-weight: 400;
     font-size: 16px;
     margin: 0;
@@ -127,7 +127,7 @@ h1, h2, h3, h4 {
 .banner-info {
     font-weight: 500;
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
 }
 
 .advantages {
