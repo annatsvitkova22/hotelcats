@@ -152,7 +152,7 @@ h1, h2, h3, h4 {
     font-weight: 500;
     font-size: 36px;
     text-align: center;
-    padding-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .card-image {
@@ -227,7 +227,7 @@ h1, h2, h3, h4 {
 
 .reviews {
     background: url("static/paw2-bg.svg") no-repeat 100% 0;
-    padding: 60px 0 70px;
+    padding: 66px 0 70px;
 }
 
 .reviews-card {
@@ -253,8 +253,9 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+    font-weight: 300;
     color: #848484;
-    padding-top: 15px;
+    padding-top: 7px;
 }
 
 .autor-name, .date {
@@ -283,7 +284,7 @@ h1, h2, h3, h4 {
 
 .wrapper-slider {
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 .scroll {
@@ -316,4 +317,33 @@ h1, h2, h3, h4 {
 
 .slick-initialized .slick-slide {
     display: flex;
+}
+
+.reviews .slick-initialized .slick-slide {
+    margin:20px 30px 20px 0;
+    max-width: 470px;
+    width: 100%;
+}
+
+.reviews .slick-list.draggable {
+    padding-left: 15px;
+    margin-left: -15px;
+}
+
+.reviews-container {
+    margin-left: calc(50% - 585px);
+}
+
+.reviews-title-block {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reviews-title {
+    margin-bottom: 37px;
+}
+
+.reviews .slick-dots {
+    bottom: -55px;
 }

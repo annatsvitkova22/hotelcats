@@ -14,8 +14,9 @@ $(document).ready(function(){
     $('.slider-reviews').slick({
         dots: true,
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        speed: 300,
+        slidesToShow: 1,
+        variableWidth: true,
         appendArrows: $('.scroll'),
         prevArrow: '#scroll-left',
         nextArrow: '#scroll-right',
