@@ -69,6 +69,7 @@ h1, h2, h3, h4 {
 }
 
 .banner {
+    max-width: 2200px;
     width: 100%;
     padding: 134px 0;
     background-size: cover;
@@ -127,10 +128,7 @@ h1, h2, h3, h4 {
 
 .advantages {
     background: url("static/paw-bg.svg") no-repeat 100% 5px;
-}
-
-.wrapper {
-    padding: 135px 0 70px;
+    padding: 130px 0 70px;
 }
 
 .advantages-content {
@@ -178,15 +176,16 @@ h1, h2, h3, h4 {
 }
 
 .rooms {
-    background: url("static/fish-bg.svg") no-repeat 0 10px;
-    margin-bottom: 100px;
+    background: url("static/fish-bg.svg") no-repeat -83px 84px;
+    padding: 60px 0 70px;
 }
 
 .rooms-wrapper {
-    padding: 20px 70px 40px;
+    position: relative;
+    padding: 10px 70px 40px;
 }
 
-.slider {
+.slider-card {
     height: 404px;
     display: flex;
     align-items: center;
@@ -196,22 +195,22 @@ h1, h2, h3, h4 {
 }
 
 .slider-content {
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
     border-radius: 8px;
     max-width: 500px;
     width: 100%;
-    padding: 35px 100px 40px;
+    padding: 30px 100px 40px;
     margin-left: auto;
 }
 
 .slider-list {
-    padding: 0 0 30px;
+    padding: 0px 0 24px;
 }
 
 .slider-list-item {
     position: relative;
-    padding-top: 20px;
+    padding-top: 11px;
     padding-left: 21px;
 }
 
@@ -224,4 +223,97 @@ h1, h2, h3, h4 {
     height: 13px;
     border-radius: 50%;
     background-color: #FAC663;
+}
+
+.reviews {
+    background: url("static/paw2-bg.svg") no-repeat 100% 0;
+    padding: 60px 0 70px;
+}
+
+.reviews-card {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    border-radius: 8px;
+    padding: 35px;
+}
+
+.card-symbol {
+    font-weight: 500;
+    font-size: 72px;
+    color: #FAC663;
+    line-height: 1;
+    margin: -4px 0 0;
+}
+
+.card-content {
+    padding-left: 8px;
+}
+
+.review-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #848484;
+    padding-top: 15px;
+}
+
+.autor-name, .date {
+    margin-bottom: 0;
+}
+
+.slick-dots {
+    bottom: -73px
+}
+
+.slick-dots li {
+    margin: 0px 2px;
+}
+
+.slick-dots li button:before {
+    font-size: 14px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #FAC663;
+}
+
+.slick-dots li button:before {
+    color: #E1E1E1;
+}
+
+.wrapper-slider {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.scroll {
+    position: absolute;
+    z-index: 5;
+    width: 36px;
+    height: 36px;
+    color: #FAC663;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    bottom: -10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+}
+
+.scroll.right {
+    right: 6%;
+}
+
+.scroll.left {
+    right: 10%;
+}
+
+.scroll:hover {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
 }

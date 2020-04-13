@@ -3,8 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>          
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header class="header">
@@ -40,43 +44,41 @@
             </section>  
             <section class="advantages">
                 <div class="container">
-                    <div class="wrapper">
-                        <h2 class="main-title">Почему мы?</h2>
-                        <div class="advantages-content">
-                            <div class="advantages-card">
-                                <img class="card-image" src="static/food.svg" alt="food" />
-                                <h3 class="card-title">Сбалансированное питание</h3>
-                                <p class="card-info">Вы можете привезти свой корм или доверить рацион своего 
-                                    питомца нашим профессионалам.</p>
-                            </div>
-                            <div class="advantages-card">
-                                <img class="card-image" src="static/pet.svg" alt="pet" />
-                                <h3 class="card-title">Ежедневные прогулки</h3>
-                                <p class="card-info">По вашему желанию мы выгуливаем вашего питомца два раза в день
-                                    на специализированной закрытой территории.</p>
-                            </div>
-                            <div class="advantages-card">
-                                <img class="card-image" src="static/help.svg" alt="help" />
-                                <h3 class="card-title">Лучшие ветеринары</h3>
-                                <p class="card-info">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.</p>
-                            </div>
-                            <div class="advantages-card">
-                                <img class="card-image" src="static/temperature.svg" alt="temperature" />
-                                <h3 class="card-title">Комфортная температура</h3>
-                                <p class="card-info">Во всех номерах поддерживается комфортная температура в пределах
-                                    23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру.</p>
-                            </div>
-                            <div class="advantages-card">
-                                <img class="card-image" src="static/camera.svg" alt="camera" />
-                                <h3 class="card-title">Видеонаблюдение</h3>
-                                <p class="card-info">Мы предоставляем доступ в нашу систему. Вы сможете следить
-                                    за своим питомцем со своего смартфона или компьютера.</p>
-                            </div>
-                            <div class="advantages-card">
-                                <img class="card-image" src="static/car.svg" alt="car" />
-                                <h3 class="card-title">Услуги Зоотакси</h3>
-                                <p class="card-info">Мы приедем за вашим питомцем в любой район Санкт-Петербурга.</p>
-                            </div>
+                    <h2 class="main-title">Почему мы?</h2>
+                    <div class="advantages-content">
+                        <div class="advantages-card">
+                            <img class="card-image" src="static/food.svg" alt="food" />
+                            <h3 class="card-title">Сбалансированное питание</h3>
+                            <p class="card-info">Вы можете привезти свой корм или доверить рацион своего 
+                                питомца нашим профессионалам.</p>
+                        </div>
+                        <div class="advantages-card">
+                            <img class="card-image" src="static/pet.svg" alt="pet" />
+                            <h3 class="card-title">Ежедневные прогулки</h3>
+                            <p class="card-info">По вашему желанию мы выгуливаем вашего питомца два раза в день
+                                на специализированной закрытой территории.</p>
+                        </div>
+                        <div class="advantages-card">
+                            <img class="card-image" src="static/help.svg" alt="help" />
+                            <h3 class="card-title">Лучшие ветеринары</h3>
+                            <p class="card-info">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.</p>
+                        </div>
+                        <div class="advantages-card">
+                            <img class="card-image" src="static/temperature.svg" alt="temperature" />
+                            <h3 class="card-title">Комфортная температура</h3>
+                            <p class="card-info">Во всех номерах поддерживается комфортная температура в пределах
+                                23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру.</p>
+                        </div>
+                        <div class="advantages-card">
+                            <img class="card-image" src="static/camera.svg" alt="camera" />
+                            <h3 class="card-title">Видеонаблюдение</h3>
+                            <p class="card-info">Мы предоставляем доступ в нашу систему. Вы сможете следить
+                                за своим питомцем со своего смартфона или компьютера.</p>
+                        </div>
+                        <div class="advantages-card">
+                            <img class="card-image" src="static/car.svg" alt="car" />
+                            <h3 class="card-title">Услуги Зоотакси</h3>
+                            <p class="card-info">Мы приедем за вашим питомцем в любой район Санкт-Петербурга.</p>
                         </div>
                     </div>
                 </div>
@@ -85,23 +87,126 @@
                 <div class="container">
                     <h2 class="main-title">Номера</h2>
                     <div class="rooms-wrapper">
-                        <div class="slider">
-                            <div class="slider-content">
-                                <h3 class="card-title">Эконом плюс</h3>
-                                <ul class="slider-list list-reset">
-                                    <li class="slider-list-item card-info"> Площадь - 0,90 м2</li>
-                                    <li class="slider-list-item card-info"> Размеры (ШхГхВ) — 90х100х180 см</li>
-                                    <li class="slider-list-item card-info">Цена за сутки: 200₽</li>
-                                </ul>
-                                <button class="button button-orange"> 
-                                    <span class="button-content">Забронировать</span>
-                                    <img src="static/paw-btn.svg" alt="paw">
-                                </button>
+                        <div class="slider-rooms">
+                            <div class="slider-card">
+                                <div class="slider-content">
+                                    <h3 class="card-title">Эконом плюс</h3>
+                                    <ul class="slider-list list-reset">
+                                        <li class="slider-list-item card-info"> Площадь - 0,90 м2</li>
+                                        <li class="slider-list-item card-info"> Размеры (ШхГхВ) — 90х100х180 см</li>
+                                        <li class="slider-list-item card-info">Цена за сутки: 200₽</li>
+                                    </ul>
+                                    <button class="button button-orange"> 
+                                        <span class="button-content">Забронировать</span>
+                                        <img src="static/paw-btn.svg" alt="paw">
+                                    </button>
+                                </div>
                             </div>
+                            <div class="slider-card">
+                                <div class="slider-content">
+                                    <h3 class="card-title">Эконом плюс</h3>
+                                    <ul class="slider-list list-reset">
+                                        <li class="slider-list-item card-info"> Площадь - 0,90 м2</li>
+                                        <li class="slider-list-item card-info"> Размеры (ШхГхВ) — 90х100х180 см</li>
+                                        <li class="slider-list-item card-info">Цена за сутки: 200₽</li>
+                                    </ul>
+                                    <button class="button button-orange"> 
+                                        <span class="button-content">Забронировать</span>
+                                        <img src="static/paw-btn.svg" alt="paw">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider-card">
+                                <div class="slider-content">
+                                    <h3 class="card-title">Эконом плюс</h3>
+                                    <ul class="slider-list list-reset">
+                                        <li class="slider-list-item card-info"> Площадь - 0,90 м2</li>
+                                        <li class="slider-list-item card-info"> Размеры (ШхГхВ) — 90х100х180 см</li>
+                                        <li class="slider-list-item card-info">Цена за сутки: 200₽</li>
+                                    </ul>
+                                    <button class="button button-orange"> 
+                                        <span class="button-content">Забронировать</span>
+                                        <img src="static/paw-btn.svg" alt="paw">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll left" id="rooms-scroll-left">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="scroll right" id="rooms-scroll-right">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="container">
+                    <h2 class="main-title">Отзывы</h2>
+                    <div class="wrapper-slider">
+                        <div class="slider-reviews">
+                            <div class="reviews-card">
+                                <p class="card-symbol">“</p>
+                                <div class="card-content">
+                                    <p class="card-info">
+                                        Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!
+                                    </p>
+                                    <div class="review-info">
+                                        <p class="autor-name">Валерия Гришаева</p>
+                                        <p class="date">15 ноября, 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-card">
+                                <p class="card-symbol">“</p>
+                                <div class="card-content">
+                                    <p class="card-info">
+                                        Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.
+                                    </p>
+                                    <div class="review-info">
+                                        <p class="autor-name">Екатерина Минаева</p>
+                                        <p class="date">10 октября, 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-card">
+                                <p class="card-symbol">“</p>
+                                <div class="card-content">
+                                    <p class="card-info">
+                                        Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.
+                                    </p>
+                                    <div class="review-info">
+                                        <p class="autor-name">Павел Нечаев</p>
+                                        <p class="date">15 ноября, 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-card">
+                                <p class="card-symbol">“</p>
+                                <div class="card-content">
+                                    <p class="card-info">
+                                        Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!
+                                    </p>
+                                    <div class="review-info">
+                                        <p class="autor-name">Валерия Гришаева</p>
+                                        <p class="date">15 ноября, 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll left" id="scroll-left">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="scroll right" id="scroll-right">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
             </section>      
         </main>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
