@@ -51,6 +51,7 @@ h1, h2, h3, h4 {
 .main-logo {
     margin: 11px 0;
     line-height: 1;
+    z-index: 1;
 }
 
 .menu-list {
@@ -78,6 +79,84 @@ h1, h2, h3, h4 {
 
 .burger-menu .menu-item  {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: #FAC663;
+    padding-top: 90px;
+    
+}
+
+.menu-icon {
+    width: 22px;
+    height: 14px;
+    position: relative;
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #1A212F;
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.menu-icon span:nth-child(1) {
+    top: 0px;
+}
+
+.menu-icon span:nth-child(2),.menu-icon span:nth-child(3) {
+    top: 7px;
+}
+
+.menu-icon span:nth-child(4) {
+    top: 14px;
+}
+
+.menu-icon.burger-active span:nth-child(1) {
+    top: 7px;
+    width: 0%;
+    left: 50%;
+}
+
+.menu-icon.burger-active span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.menu-icon.burger-active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.menu-icon.burger-active span:nth-child(4) {
+    top: 7px;
+    width: 0%;
+    left: 50%;
+}
+
+.burger-menu .item-link {
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+}
+
+.burger-menu  .list-item-number {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    color: #1A212F;
+    padding-top: 20px;
+}
+
+.burger-menu .icon {
+    width: 24px
 }
 
 .menu-item.menu-active {
@@ -87,14 +166,12 @@ h1, h2, h3, h4 {
 .menu-icon {
     font-size: 20px;
     position: relative;
+    z-index: 1;
 }
 
-.burger-menu .menu-list {
-    position: absolute;
-    display: block;
-    right: 4px;
-    background-color: rgba(255, 255, 255, 0.82);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
+.contact-link {
+    color: #1A212F;
+    margin: 2px 0 10px;
 }
 
 .burger-menu .list-item {

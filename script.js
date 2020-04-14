@@ -64,9 +64,11 @@ function initMap() {
 
 window.onload = function() {
     var burgerMenu = document.querySelector('.burger-menu');
+    var burgerIcon = document.querySelector('.menu-icon'); 
     var menuItem = document.querySelector('.menu-item');
 
     burgerMenu.onclick = function () {
         menuItem.classList.toggle('menu-active');
+        burgerIcon.classList.toggle('burger-active')
     };
 }
