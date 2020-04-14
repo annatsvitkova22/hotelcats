@@ -53,3 +53,11 @@ function initMap() {
     });
 }
 
+window.onload = function() {
+    var burgerMenu = document.querySelector('.burger-menu');
+    var menuItem = document.querySelector('.menu-item');
+
+    burgerMenu.onclick = function () {
+        menuItem.classList.toggle('menu-active');
+    };
+}
