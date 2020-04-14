@@ -402,6 +402,8 @@ h1, h2, h3, h4 {
     width: 100%;
     background-color:#FAC663;
     padding: 57px 0 70px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .map {
@@ -410,7 +412,8 @@ h1, h2, h3, h4 {
 }
 
 .contacts-wrapper {
-    padding-left: 110px;
+    /* padding-left: 110px; */
+    padding-right: 117px;
 }
 
 .contact-title {
@@ -478,8 +481,13 @@ h1, h2, h3, h4 {
 }
 
 @media screen and ( max-width: 960px ) {
+    .contacts {
+        justify-content: flex-start;
+    }
+
     .contacts-wrapper {
         padding-left: 45px;
+        padding-right: 0;
     }
 
     .map {
@@ -573,6 +581,12 @@ h1, h2, h3, h4 {
 
     .slider-card {
         height: 326px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .contacts-wrapper {
+        padding-left: 15px;
     }
 }
 
