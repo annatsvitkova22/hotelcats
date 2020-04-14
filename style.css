@@ -750,4 +750,8 @@ h1, h2, h3, h4 {
     .reviews-card {
         padding: 25px;
     }
+
+    .review-info {
+        display: none;
+    }
 }
