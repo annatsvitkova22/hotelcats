@@ -637,6 +637,14 @@ h1, h2, h3, h4 {
         width: calc( ( 100% - 20px ) / 2 );
     }
 
+    .slick-dots {
+        bottom: -50px;
+    }
+
+    .reviews .slick-dots {
+        bottom: -50px;
+    }
+
     .card-image {
         width: 75px;
         height: 75px;
@@ -787,6 +795,14 @@ h1, h2, h3, h4 {
 
     .copyright-info:last-of-type {
         padding: 5px 0 27px;
+    }
+
+    .slick-dots {
+        bottom: -30px;
+    }
+
+    .reviews .slick-dots {
+        bottom: -30px;
     }
 
     .slider-card {
