@@ -204,6 +204,10 @@ h1, h2, h3, h4 {
     padding: 0 9px 0 27px;
 }
 
+.button:focus {
+    outline: none;
+}
+
 .button-white {
     background-color: #FFFEFD;
 }
@@ -232,10 +236,10 @@ h1, h2, h3, h4 {
 
 .banner-title {
     font-family: "Rubik", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 0;
     margin-bottom: 11px;
-    font-size: 64px;
+    font-size: 62px;
     line-height: 1;
 }
 
@@ -322,6 +326,14 @@ h1, h2, h3, h4 {
     height: 404px;
     padding-right: 10px;
     background-image: url(static/rectangle.png);
+}
+
+.slider-card:focus {
+    outline: none;
+}
+
+.slick-slide:focus {
+    outline: none;
 }
 
 .slider-content {
