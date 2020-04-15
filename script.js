@@ -29,20 +29,6 @@ $(document).ready(function(){
         appendArrows: $('.scroll'),
         prevArrow: '#scroll-left',
         nextArrow: '#scroll-right',
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 375,
-                settings: {
-                slidesToShow: 1
-                }
-            }
-        ]
     });
 });
 
