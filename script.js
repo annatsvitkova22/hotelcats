@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".navbar").on("click","a", function (event) {
         event.preventDefault();
-        var id  = $(this).attr('href'),
+        const id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
@@ -48,8 +48,8 @@ $(document).ready(function(){
 
 
 function initMap() {
-    var directionsDisplay = new google.maps.DirectionsRenderer;
-    var map = new google.maps.Map(document.getElementById('map'), {
+    const directionsDisplay = new google.maps.DirectionsRenderer;
+    const map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
         center: {lat: 59.9387942, lng: 30.3230833}
     });
@@ -63,12 +63,14 @@ function initMap() {
 }
 
 window.onload = function() {
-    var burgerMenu = document.querySelector('.burger-menu');
-    var burgerIcon = document.querySelector('.menu-icon'); 
-    var menuItem = document.querySelector('.menu-item');
+    const burgerMenu = document.querySelector('.burger-menu');
+    const burgerIcon = document.querySelector('.menu-icon'); 
+    const menuItem = document.querySelector('.menu-item');
+    const body = document.querySelector('body');
 
     burgerMenu.onclick = function () {
         menuItem.classList.toggle('menu-active');
         burgerIcon.classList.toggle('burger-active')
+        body.classList.toggle('body-hidden')
     };
 }
