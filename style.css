@@ -399,6 +399,11 @@ h1, h2, h3, h4 {
     margin-bottom: 0;
 }
 
+.date {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
 .slick-dots {
     bottom: -73px
 }
@@ -440,11 +445,11 @@ h1, h2, h3, h4 {
 }
 
 .scroll.right {
-    right: 6%;
+    right: 65px;
 }
 
 .scroll.left {
-    right: 10%;
+    right: 114px;
 }
 
 .scroll:hover {
@@ -460,6 +465,11 @@ h1, h2, h3, h4 {
     margin:20px 30px 20px 0;
     max-width: 470px;
     width: 100%;
+    height: inherit;
+}
+
+.reviews .slick-track {
+    display: flex;
 }
 
 .reviews .slick-list.draggable {
