@@ -434,7 +434,7 @@ h1, h2, h3, h4 {
     z-index: 5;
     width: 36px;
     height: 36px;
-    color: #FAC663;
+    color: #FF7236;
     border-radius: 50%;
     text-align: center;
     line-height: 36px;
@@ -455,6 +455,7 @@ h1, h2, h3, h4 {
 .scroll:hover {
     cursor: pointer;
     transition: all 0.3s;
+    box-shadow: 0px 3px 12px rgba(173, 152, 143, 1);
 }
 
 .slick-initialized .slick-slide {
