@@ -10,10 +10,10 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.slider-rooms').slick({
         dots: true,
-        infinite: true,
+        infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        appendArrows: $('.scroll'),
+        appendDots: $('.slick-dots'),
         prevArrow: '#rooms-scroll-left',
         nextArrow: '#rooms-scroll-right',
     });
@@ -26,6 +26,7 @@ $(document).ready(function(){
         speed: 300,
         slidesToShow: 1,
         variableWidth: true,
+        appendDots: $('.reviews-slick-dots'),
         appendArrows: $('.scroll'),
         prevArrow: '#scroll-left',
         nextArrow: '#scroll-right',

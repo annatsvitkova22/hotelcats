@@ -2,6 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>hotelcats</title>
 
         <link rel="shortcut icon" type="image/png" href="static/favicon.png"/>
@@ -39,7 +40,7 @@
                                 <li class="list-item"><a href="#advantages" class="item-link">Почему мы?</a></li>
                                 <li class="list-item"><a href="#rooms" class="item-link">Номера</a></li>
                                 <li class="list-item"><a href="#reviews" class="item-link">Отзывы</a></li>
-                                <li class="list-item"><a href="#about-us" class="item-link">Как нас найти</a></li>
+                                <li class="list-item"><a href="#about-us" class="item-link">Контакты</a></li>
                                 <li class="list-item"><a class="list-item-number" href="tel:880033355599">8 (800) 333-55-99</a></li>
                                 <li class="list-item">
                                     <a href="#"><img class="icon" src="static/fb.svg" alt="facebook" /></a>
@@ -71,23 +72,6 @@
                     <h2 class="main-title advantages-title">Почему мы?</h2>
                     <div class="advantages-content">
                         <div class="advantages-card box-shadow">
-                            <img class="card-image" src="static/food.svg" alt="food" />
-                            <h3 class="card-title">Сбалансированное питание</h3>
-                            <p class="card-info">Вы можете привезти свой корм или доверить рацион своего 
-                                питомца нашим профессионалам.</p>
-                        </div>
-                        <div class="advantages-card box-shadow">
-                            <img class="card-image" src="static/pet.svg" alt="pet" />
-                            <h3 class="card-title">Ежедневные прогулки</h3>
-                            <p class="card-info">По вашему желанию мы выгуливаем вашего питомца два раза в день
-                                на специализированной закрытой территории.</p>
-                        </div>
-                        <div class="advantages-card box-shadow">
-                            <img class="card-image" src="static/help.svg" alt="help" />
-                            <h3 class="card-title">Лучшие ветеринары</h3>
-                            <p class="card-info">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.</p>
-                        </div>
-                        <div class="advantages-card box-shadow">
                             <img class="card-image" src="static/temperature.svg" alt="temperature" />
                             <h3 class="card-title">Комфортная температура</h3>
                             <p class="card-info">Во всех номерах поддерживается комфортная температура в пределах
@@ -104,6 +88,23 @@
                             <h3 class="card-title">Услуги Зоотакси</h3>
                             <p class="card-info">Мы приедем за вашим питомцем в любой район Санкт-Петербурга.</p>
                         </div>
+                        <div class="advantages-card box-shadow">
+                            <img class="card-image" src="static/food.svg" alt="food" />
+                            <h3 class="card-title">Сбалансированное питание</h3>
+                            <p class="card-info">Вы можете привезти свой корм или доверить рацион своего 
+                                питомца нашим профессионалам.</p>
+                        </div>
+                        <div class="advantages-card box-shadow">
+                            <img class="card-image" src="static/pet.svg" alt="pet" />
+                            <h3 class="card-title">Ежедневные прогулки</h3>
+                            <p class="card-info">По вашему желанию мы выгуливаем вашего питомца два раза в день
+                                на специализированной закрытой территории.</p>
+                        </div>
+                        <div class="advantages-card box-shadow">
+                            <img class="card-image" src="static/help.svg" alt="help" />
+                            <h3 class="card-title">Лучшие ветеринары</h3>
+                            <p class="card-info">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.</p>
+                        </div>
                     </div>
                 </div>
             </section> 
@@ -113,6 +114,7 @@
                     <div class="rooms-wrapper">
                         <div class="slider-rooms">
                             <div class="slider-card">
+                                <div class="slider-image"></div>
                                 <div class="slider-content box-shadow">
                                     <h3 class="card-title">Эконом плюс</h3>
                                     <ul class="slider-list list-reset">
@@ -126,7 +128,8 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="slider-card ">
+                            <div class="slider-card">
+                                <div class="slider-image"></div>
                                 <div class="slider-content box-shadow">
                                     <h3 class="card-title">Эконом плюс</h3>
                                     <ul class="slider-list list-reset">
@@ -140,7 +143,8 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="slider-card ">
+                            <div class="slider-card">
+                                <div class="slider-image"></div>
                                 <div class="slider-content box-shadow">
                                     <h3 class="card-title">Эконом плюс</h3>
                                     <ul class="slider-list list-reset">
@@ -155,6 +159,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="slick-dots"></div>
                         <div class="scroll left" id="rooms-scroll-left">
                             <i class="fa fa-angle-left" aria-hidden="true"></i>
                         </div>
@@ -165,7 +170,7 @@
                 </div>
             </section>
             <section class="reviews" id="reviews">
-                <div class="reviews-title-block">
+                <div class="container">
                     <h2 class="main-title reviews-title">Отзывы</h2>
                 </div>
                 <div class="reviews-container">   
@@ -208,69 +213,80 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="scroll left" id="scroll-left">
-                            <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        </div>
-                        <div class="scroll right" id="scroll-right">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </div>
+                    </div>
+                </div>
+                <div class="container pos-relative">
+                    <div class="reviews-slick-dots"></div>
+                    <div class="scroll left" id="scroll-left">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="scroll right" id="scroll-right">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </div>
                 </div>
             </section>
             <section class="about-us" id="about-us">
-                <div class="contacts">
-                    <div class="contacts-wrapper">
-                        <h2 class="main-title contact-title">Как нас найти</h2>
-                        <div class="card-info">
-                            <h6 class="contact-small-title">Адрес</h6>
-                            <address class="address">Санкт-Петербург,</address>
-                            <address class="address">ул Большая Конюшенная, д 19</address>
-                        </div>
-                        <div class="card-info">
-                            <h6 class="contact-small-title">Режим работы</h6>
-                            <p>Ежедневно, с 9:00 до 20:00</p>
-                        </div>
-                        <div class="card-info">
-                            <h6 class="contact-small-title">Телефон</h6>
-                            <a class="contact-link" href="tel:88003335599">8 (800) 333-55-99</a>
-                        </div>
-                        <div class="card-info">
-                            <h6 class="contact-small-title">E-mail</h6>
-                            <a class="contact-link" href="mailto:info@cat-hotel.ru">info@cat-hotel.ru</a>
-                        </div>
-                        <div class="card-info">
-                            <h6 class="contact-small-title">Социальные сети</h6>
-                            <div class="social-icon">
-                                <a href="#"><img class="icon" src="static/fb.svg" alt="facebook" /></a>
-                                <a href="#"><img class="icon" src="static/ins.svg" alt="instagram" /></a>
-                                <a href="#"><img class="icon" src="static/vk.svg" alt="vk" /></a>
+                <div class="small-container container">
+                    <div class="contacts">
+                        <div class="contacts-wrapper">
+                            <h2 class="main-title contact-title">Как нас найти</h2>
+                            <div class="card-info">
+                                <h6 class="contact-small-title">Адрес</h6>
+                                <address class="address">Санкт-Петербург,</address>
+                                <address class="address">ул Большая Конюшенная, д 19</address>
+                            </div>
+                            <div class="card-info">
+                                <h6 class="contact-small-title">Режим работы</h6>
+                                <p class="schedule">Ежедневно, с 9:00 до 20:00</p>
+                            </div>
+                            <div class="card-info">
+                                <h6 class="contact-small-title">Телефон</h6>
+                                <a class="contact-link" href="tel:88003335599">8 (800) 333-55-99</a>
+                            </div>
+                            <div class="card-info">
+                                <h6 class="contact-small-title">E-mail</h6>
+                                <a class="contact-link" href="mailto:info@cat-hotel.ru">info@cat-hotel.ru</a>
+                            </div>
+                            <div class="card-info">
+                                <h6 class="contact-small-title">Социальные сети</h6>
+                                <div class="social-icon">
+                                    <a href="#"><img class="icon" src="static/fb.svg" alt="facebook" /></a>
+                                    <a href="#"><img class="icon" src="static/ins.svg" alt="instagram" /></a>
+                                    <a href="#"><img class="icon" src="static/vk.svg" alt="vk" /></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="map" id="map"></div>
+                <div class="map-content">
+                    <div class="map" id="map"></div>
+                </div>
             </section> 
         </main>
         <footer class="footer">
             <div class="top-footer">
-                <div class="footer-container">
+                <div class="small-container container">
                     <div class="footer-content">
                         <a href="#" class="main-logo">
                             <img class="logo-icon" src="static/logo.svg" alt="logo"/>
                         </a>
                         <nav class="main-menu navbar">
                             <ul class="menu-list list-reset">
-                                <li class="list-item"><a href="#advantages" class="item-link">Почему мы?</a></li>
-                                <li class="list-item"><a href="#rooms" class="item-link">Номера</a></li>
-                                <li class="list-item"><a href="#reviews" class="item-link">Отзывы</a></li>
-                                <li class="list-item"><a href="#about-us" class="item-link">Как нас найти</a></li>
+                                <li class="footer-list-item">
+                                    <a href="#advantages" class="item-link">Почему мы?</a>
+                                    <a href="#rooms" class="item-link">Номера</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#reviews" class="item-link">Отзывы</a>
+                                    <a href="#about-us" class="item-link">Как нас найти</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
             <div class="bottom-footer">
-                <div class="footer-container">
+                <div class="small-container container">
                     <div class="footer-content copyright">
                         <p class="copyright-info">© 2019 Все права защищены</p>
                         <p class="copyright-info">Политика конфиденциальности</p>

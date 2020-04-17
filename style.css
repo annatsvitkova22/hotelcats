@@ -42,6 +42,10 @@ h1, h2, h3, h4 {
     padding: 0 15px;
 }
 
+.small-container {
+    max-width: 1000px;
+}
+
 .body-hidden {
     overflow: hidden
 }
@@ -71,7 +75,7 @@ h1, h2, h3, h4 {
     padding-right: 0;
 }
 
-.list-item  .item-link { 
+.item-link { 
     font-weight: 500;
     font-size: 16px;
     color: #1A212F;
@@ -90,7 +94,7 @@ h1, h2, h3, h4 {
     bottom: 0;
     height: 100vh;
     background-color: #FAC663;
-    padding-top: 90px;
+    padding-top: 86px;
     
 }
 
@@ -156,11 +160,13 @@ h1, h2, h3, h4 {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     color: #1A212F;
-    padding-top: 20px;
+    padding-top: 16px;
+    padding-bottom: 6px;
 }
 
 .burger-menu .icon {
-    width: 24px
+    width: 24px;
+    margin-right: 18px;
 }
 
 .menu-item.menu-active {
@@ -175,12 +181,13 @@ h1, h2, h3, h4 {
 
 .contact-link {
     color: #1A212F;
-    margin: 2px 0 10px;
+    margin: 0;
+    padding-bottom: 3px;
 }
 
 .burger-menu .list-item {
     display: block;
-    padding: 10px 15px;
+    padding: 8px 15px 7px;
 }
 
 .banner {
@@ -201,7 +208,7 @@ h1, h2, h3, h4 {
     height: 50px;
     display: flex;
     align-items: center;
-    padding: 0 9px 0 27px;
+    padding: 0 5px 0 27px;
 }
 
 .button:focus {
@@ -220,6 +227,7 @@ h1, h2, h3, h4 {
 .button:hover {
     cursor: pointer;
     transition: all 0.5s;
+    box-shadow: 0px 3px 12px rgba(173, 152, 143, 1);
 }
 
 .button-content {
@@ -246,7 +254,7 @@ h1, h2, h3, h4 {
 .banner-info {
     font-weight: 500;
     font-size: 20px;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
 }
 
 .box-shadow {
@@ -257,20 +265,21 @@ h1, h2, h3, h4 {
 
 .advantages {
     background: url("static/paw-bg.svg") no-repeat 100% 5px;
-    padding: 108px 0 70px;
+    padding: 108px 0 66px;
 }
 
 .advantages-content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 }
 
 .advantages-card {
     max-width: 370px;
-    width:calc( ( 100% - 20px ) / 3 );
-    padding: 30px;
-    margin-top: 15px;
+    width: calc( ( 100% - 20px ) / 3 );
+    padding: 30px 30px 24px;
+    margin-top: 19px;
+    min-height: 321px;
 }
 
 .main-title {
@@ -283,13 +292,13 @@ h1, h2, h3, h4 {
 
 .advantages-title {
     margin-top: 24px;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
 }
 
 .card-image {
     width: 91px;
     height: 91px;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
 }
 
 .card-title {
@@ -306,6 +315,18 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
+.about-us .card-info {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+}
+
+.schedule {
+    line-height: 1;
+    margin-bottom: 0;
+    padding-bottom: 3px;
+}
+
 .rooms {
     background: url("static/fish-bg.svg") no-repeat -83px 84px;
     padding: 60px 0 70px;
@@ -313,19 +334,20 @@ h1, h2, h3, h4 {
 
 .rooms-wrapper {
     position: relative;
-    padding: 10px 60px 40px 70px;
+    padding: 10px 60px 0 70px;
 }
 
 .slider-card {
-    height: 404px;
     display: flex;
-    align-items: center;
+}
+
+.slider-image {
+    width: 57.75555%;
     background-repeat: no-repeat;
-    justify-content: flex-end;
-    background-size: 58% 100%;
-    height: 404px;
-    padding-right: 10px;
+    background-size: cover;
     background-image: url(static/rectangle.png);
+    border-radius: 10px;
+    height: 404px;
 }
 
 .slider-card:focus {
@@ -337,11 +359,13 @@ h1, h2, h3, h4 {
 }
 
 .slider-content {
+    position: absolute;
     max-width: 500px;
     width: 100%;
     padding: 30px 100px 40px;
-    margin-left: auto;
+    right: 0px;
     background-color: #ffffff;
+    transform: translateX(-10px);
 }
 
 .slider-list {
@@ -358,7 +382,7 @@ h1, h2, h3, h4 {
     position: absolute;
     content: ' ';
     left: 0;
-    bottom: 5px;
+    top: 15px;
     width: 13px;
     height: 13px;
     border-radius: 50%;
@@ -367,11 +391,11 @@ h1, h2, h3, h4 {
 
 .reviews {
     background: url("static/paw2-bg.svg") no-repeat 100% 0;
-    padding: 66px 0 70px;
+    padding: 63px 0 70px;
 }
 
 .reviews-card {
-    padding: 35px;
+    padding: 32px 35px 30px;
 }
 
 .card-symbol {
@@ -405,11 +429,11 @@ h1, h2, h3, h4 {
 }
 
 .slick-dots {
-    bottom: -73px
+   position: static;
 }
 
 .slick-dots li {
-    margin: 0px 2px;
+    margin: 0 5px 0 0;
 }
 
 .slick-dots li button:before {
@@ -418,10 +442,16 @@ h1, h2, h3, h4 {
 
 .slick-dots li.slick-active button:before {
     color: #FAC663;
+    opacity: 1;
 }
 
 .slick-dots li button:before {
     color: #E1E1E1;
+    opacity: 1;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 49px;
 }
 
 .wrapper-slider {
@@ -432,24 +462,25 @@ h1, h2, h3, h4 {
 .scroll {
     position: absolute;
     z-index: 5;
+    bottom: 0;
     width: 36px;
     height: 36px;
     color: #FF7236;
     border-radius: 50%;
     text-align: center;
     line-height: 36px;
-    font-size: 16px;
-    bottom: -10px;
+    font-size: 14px;
+    bottom: -7px;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 }
 
 .scroll.right {
-    right: 65px;
+    right: 68px;
 }
 
 .scroll.left {
-    right: 114px;
+    right: 116px;
 }
 
 .scroll:hover {
@@ -458,11 +489,14 @@ h1, h2, h3, h4 {
     box-shadow: 0px 3px 12px rgba(173, 152, 143, 1);
 }
 
-.slick-initialized .slick-slide {
+.rooms .slick-initialized .slick-slide {
+    position: relative;
     display: flex;
+    align-items: center;
 }
 
 .reviews .slick-initialized .slick-slide {
+    display: flex;
     margin:20px 30px 20px 0;
     max-width: 470px;
     width: 100%;
@@ -482,14 +516,28 @@ h1, h2, h3, h4 {
     margin-left: calc(50% - 585px);
 }
 
-.reviews-title-block {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
+.pos-relative {
+    position: relative;
+}
+
+.reviews .slick-dotted.slick-slider {
+    margin-bottom: 14px;
+}
+
+.reviews .slick-dots li {
+    margin: 0 2px 0 0;
+}
+
+.reviews .scroll.left {
+    right: 132px;
+}
+
+.reviews .scroll.right {
+    right: 83px;
 }
 
 .reviews-title {
-    margin-bottom: 37px;
+    margin-bottom: 40px;
 }
 
 .reviews .slick-dots {
@@ -497,26 +545,42 @@ h1, h2, h3, h4 {
 }
 
 .about-us {
-    display: flex;
-    margin-top: 54px;
+    margin-top: 77px;
+    position: relative;
+    background-color:#FAC663;
 }
 
 .contacts {
-    max-width: 40%;
+    max-width: 40.55555%;
     width: 100%;
-    background-color:#FAC663;
-    padding: 57px 0 70px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.map {
-    max-width: 60%;
-    width: 100%;
+    padding: 56px 0 68px;
 }
 
 .contacts-wrapper {
-    padding-right: 117px;
+    max-width: 300px;
+}
+
+.footer .main-logo {
+    margin: 11px 0 10px;
+}
+
+.map-content {
+    max-width: 59.55555%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: auto;
+}
+
+.map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .contact-title {
@@ -526,7 +590,7 @@ h1, h2, h3, h4 {
 
 .contact-small-title {
     font-size: 16px;
-    margin: 27px 0 8px;
+    margin: 27px 0 12px;
     line-height: 1;
 }
 
@@ -543,7 +607,9 @@ h1, h2, h3, h4 {
 }
 
 .address {
+    line-height: 1;
     font-style: normal;
+    padding-bottom: 4px;
 }
 
 .footer-content {
@@ -552,15 +618,16 @@ h1, h2, h3, h4 {
     align-items: center;
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 115px;
-}
-
 .footer .menu-list {
     flex-wrap: wrap;
+}
+
+.footer .item-link {
+    padding: 14px;
+}
+
+.footer .footer-list-item:last-of-type .item-link:last-of-type {
+    padding-right: 0;
 }
 
 .top-footer {
@@ -584,16 +651,15 @@ h1, h2, h3, h4 {
 }
 
 @media screen and ( max-width: 960px ) {
+    .container {
+        padding: 0 45px;
+    }
+
     .contacts {
         justify-content: flex-start;
     }
 
-    .contacts-wrapper {
-        padding-left: 45px;
-        padding-right: 0;
-    }
-
-    .map {
+    .map-content {
         max-width: 53%;
     }
 
@@ -608,7 +674,7 @@ h1, h2, h3, h4 {
     }
 
     .banner {
-        padding: 140px 0 540px;
+        padding: 136px 0 530px;
         background-image: url(static/bg.png);
     }
 
@@ -617,35 +683,106 @@ h1, h2, h3, h4 {
         padding-left: 0
     }
 
+    .banner-location {
+        margin-bottom: 2px;
+    }
+
+    .banner-info {
+        margin-bottom: 34px;
+    }
+
     .button-white {
         margin-left: auto;
         margin-right: auto;
     }
 
+    .contacts {
+        max-width: 48%;
+        padding: 47px 0 59px;
+    }
+
+    .contact-title {
+        margin-bottom: 29px;
+    }
+
+    .address {
+        padding-bottom: 1px;
+    }
+
+    .contact-link {
+        padding-bottom: 0px;
+    }
+
+    .schedule {
+        padding-bottom: 1px;
+    }
+
+    .map-content {
+        max-width: 52%;
+    }
+
+    .advantages-card {
+        padding: 25px 25px 20px;
+        margin-top: 29px;
+    }
+
+    .advantages-title {
+        margin-bottom: 23px;
+    }
+
     .advantages {
-        background-position: 109% 5px;
-        background-size: 300px 257px;
-        padding: 88px 0 60px;
+        background-position: 115% 25px;
+        background-size: 320px 260px;
+        padding: 87px 0 60px;
     }
 
     .rooms {
         background-size: 339px 105px;
         background-position: 0px 74px;
-        padding: 55px 0 60px;
+        padding: 47px 0 46px;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 43px;
+    }
+
+    .slick-dots li {
+        margin: 0 3px 0 0;
     }
 
     .reviews {
         background-size: 227px 194px;
-        background-position: 102% 0px;
-        padding: 55px 0 60px;
+        background-position: 100% 0px;
+        padding: 55px 0 70px;
+    }
+
+    .reviews-title {
+        margin-bottom: 31px;
+    }
+
+    .reviews-container {
+        padding-left: 45px;
+    }
+
+    .reviews-card {
+        padding: 32px 33px 30px 35px;
+    }
+
+    .review-info {
+        padding-top: 6px;
     }
 
     .about-us {
         margin-top: 44px;
     }
 
+    .wrapper-slider {
+        padding-bottom: 10px;
+    }
+
     .advantages-card {
-        width: calc( ( 100% - 20px ) / 2 );
+        width: calc( ( 100% - 30px ) / 2 );
+        min-height: 285px;
     }
 
     .slick-dots {
@@ -659,6 +796,7 @@ h1, h2, h3, h4 {
     .card-image {
         width: 75px;
         height: 75px;
+        margin-bottom: 18px;
     }
 
     .card-title {
@@ -673,39 +811,59 @@ h1, h2, h3, h4 {
         display: none !important;
     }
 
-    .rooms-wrapper {
-        padding: 10px 20px 40px 30px;
-    }
-
     .reviews .slick-initialized .slick-slide {
         max-width: 442px;
     }
 
     .contact-small-title {
         font-size: 15px;
+        margin: 24px 0 12px;
     }
 
     .footer-container {
         padding: 0 15px;
     }
 
-    .slider-content {
-        max-width: 345px;
-        padding: 30px 38px 40px 40px;
-    }
-
     .slider-card {
         height: 326px;
     }
 
+    .slider-list {
+        padding: 0px 0 25px;
+    }
+
+    .slider-list-item::before {
+        width: 11px;
+        height: 11px;
+        top: 12px;
+    }
+
+    .slider-list-item {
+        padding-top: 7px;
+        padding-left: 19px;
+    }
+
+    .slider-content {
+        max-width: 345px;
+        padding: 30px 38px 40px 40px;
+        transform: translateX(-1px);
+    }
+
+    .slider-image {
+        height: 326px;
+        width: 65%;
+    }
+
+    .rooms-wrapper {
+        padding: 1px 0 0;
+    }
+
+    .rooms .card-title {
+        margin-bottom: 8px;
+    }
+
     .footer-container {
         padding: 0 45px;
-    }
-}
-
-@media screen and (max-width: 680px) {
-    .contacts-wrapper {
-        padding-left: 15px;
     }
 }
 
@@ -715,17 +873,14 @@ h1, h2, h3, h4 {
     }
 
     .contacts {
-        max-width: 100%;;
-        padding: 35px 0 40px;
+        max-width: 100%;
+        padding: 29px 0 339px;
     }
 
-    .map {
+    .map-content {
         max-width: 100%;
         height: 300px;
-    }
-
-    .contacts-wrapper {
-        padding-left: 15px;
+        top: auto;
     }
 }
 
@@ -763,7 +918,7 @@ h1, h2, h3, h4 {
     }
     .banner-info {
         font-size: 16px;
-        margin-bottom: 37px;
+        margin-bottom: 36px;
     }
 
     .card-image {
@@ -779,20 +934,17 @@ h1, h2, h3, h4 {
         font-size: 28px;
     }
 
-    .rooms-wrapper {
-        padding: 10px 0 40px;
-    }
-
     .footer-content {
         display: block;
     }
 
-    .footer .list-item {
-        padding: 10px 35px 10px 0;
+    .footer-list-item {
+        display: flex;
+        flex-direction: column;
     }
 
     .footer .menu-list {
-        padding-bottom: 20px;
+        padding-bottom: 26px;
     }
 
     .copyright {
@@ -805,7 +957,7 @@ h1, h2, h3, h4 {
     }
 
     .copyright-info:last-of-type {
-        padding: 5px 0 27px;
+        padding: 3px 0 27px;
     }
 
     .slick-dots {
@@ -814,18 +966,6 @@ h1, h2, h3, h4 {
 
     .reviews .slick-dots {
         bottom: -30px;
-    }
-
-    .slider-card {
-        background-size: 100% 50%;
-        height: auto;
-        padding-bottom: 20px;
-    }
-
-    .slider-content {
-        max-width: 100%;
-        padding: 25px;
-        margin-top: 190px;
     }
 
     .advantages-title {
@@ -846,12 +986,55 @@ h1, h2, h3, h4 {
 
     .slider-card {
         padding-right: 0;
+        height: auto;
+    }
+
+    .rooms .slick-initialized .slick-slide {
+        position: static;
+        display: block;
+    }
+
+    .slider-image {
+        min-height: 192px;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .slider-content {
+        padding: 18px 22px 25px 27px;
+        max-width: 100%;
+    }
+
+    .slider-content {
+        position: static;
+    }
+
+    .slider-list {
+        padding: 0px 0 19px;
+    }
+
+    .footer .item-link {
+        padding: 10px 42px 0 0;
     }
 }
 
 @media screen and ( max-width: 500px ) { 
     .advantages-card {
         width: 100%;
+        min-height: 206px;
+    }
+
+    .card-image {
+        margin-bottom: 20px;
+    }
+
+    .about-us {
+        margin-top: 30px;
+    }
+
+    .advantages-card {
+        padding: 25px 11px 20px 25px;
     }
 
     .advantages-content {
@@ -865,7 +1048,7 @@ h1, h2, h3, h4 {
     .advantages {
         background: url(static/paw-bg.svg) no-repeat 100% 54px;
         background-size: 116px 99px;
-        padding: 40px 0 35px;
+        padding: 41px 0 35px;
     }
 
     .advantages-title {
@@ -875,17 +1058,25 @@ h1, h2, h3, h4 {
     .rooms {
         background-size: 150px 46px;
         background-position: 0px 65px;
-        padding: 30px 0 35px;
+        padding: 26px 0 35px;
+    }
+
+    .card-info:last-of-type .contact-small-title {
+        margin-bottom: 16px;
+    }
+
+    .contact-small-title {
+        margin: 24px 0 11px;
     }
 
     .reviews {
         background-size: 112px 95px;
         background-position: 105% 21px;
-        padding: 30px 0 35px;
+        padding: 19px 0 35px;
     }
 
-    .about-us {
-        margin-top: 27px;
+    .reviews-container {
+        padding-left: 15px;
     }
 
     .reviews-title {
@@ -896,12 +1087,36 @@ h1, h2, h3, h4 {
         margin-bottom: 5px;
     }
 
+    .footer .main-logo {
+        margin: 30px 0 10px;
+    }
+
     .rooms-wrapper {
-        padding: 20px 0 20px;
+        padding: 28px 0 0;
+    }
+
+    .card-info:first-of-type .contact-small-title {
+        margin: 32px 0 12px;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 24px;
     }
 
     .reviews-card {
-        padding: 25px;
+        padding: 21px;
+    }
+
+    .wrapper-slider {
+        padding-bottom: 0px;
+    }
+
+    .reviews .slick-initialized .slick-slide {
+        margin: 28px 30px 20px 0;
+    }
+
+    .reviews .slick-dotted.slick-slider {
+        margin-bottom: 2px;
     }
 
     .review-info {
@@ -909,7 +1124,7 @@ h1, h2, h3, h4 {
     }
 
     .button-orange {
-        padding: 0px 7px 0 45px;
+        padding: 0px 7px 0 46px;
     }
 
     .button-orange .button-content {
