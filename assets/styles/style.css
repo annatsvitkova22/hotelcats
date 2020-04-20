@@ -285,6 +285,12 @@ button:active {
     border-radius: 8px;
 }
 
+.small-box-shadow {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(208, 208, 208, 0.25);
+    border-radius: 8px;
+}
+
 .advantages {
     background: url("../images/paw-bg.svg") no-repeat 100% 5px;
     padding: 108px 0 66px;
@@ -356,7 +362,7 @@ button:active {
 
 .rooms-wrapper {
     position: relative;
-    padding: 10px 60px 0 70px;
+    padding: 10px 50px 0 70px;
 }
 
 .slider-card {
@@ -364,7 +370,7 @@ button:active {
 }
 
 .slider-image {
-    width: 57.75555%;
+    width: 57.05555%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../images/rectangle.png");
@@ -387,7 +393,7 @@ button:active {
     padding: 30px 100px 40px;
     right: 0px;
     background-color: #ffffff;
-    transform: translateX(-10px);
+    transform: translateX(-20px);
 }
 
 .slider-list {
@@ -455,7 +461,7 @@ button:active {
 }
 
 .slick-dots li {
-    margin: 0 5px 0 0;
+    margin: 0 11px 0 -7px;
 }
 
 .slick-dots li button:before {
@@ -519,7 +525,7 @@ button:active {
 
 .reviews .slick-initialized .slick-slide {
     display: flex;
-    margin:20px 30px 20px 0;
+    margin:20px 15px 20px 15px;
     max-width: 470px;
     width: 100%;
     height: inherit;
@@ -693,6 +699,17 @@ button:active {
         width: calc( ( 100% - 30px ) / 2 );
         min-height: 285px;
     }
+
+    .slider-content {
+        max-width: 345px;
+        padding: 30px 35px 40px 27px;
+        transform: translateX(-20px);
+    }
+
+    .slider-image {
+        height: 326px;
+        width: 65%;
+    }
 }
 
 @media screen and ( max-width: 768px ) {
@@ -801,7 +818,7 @@ button:active {
     }
 
     .about-us {
-        margin-top: 44px;
+        margin-top: 45px;
     }
 
     .wrapper-slider {
@@ -869,16 +886,15 @@ button:active {
     .slider-content {
         max-width: 345px;
         padding: 30px 38px 40px 40px;
-        transform: translateX(-1px);
+        transform: translateX(0px);
     }
 
-    .slider-image {
-        height: 326px;
-        width: 65%;
+    .rooms-container {
+        padding: 0 20px 0 20px;
     }
 
     .rooms-wrapper {
-        padding: 1px 0 0;
+        padding: 0;
     }
 
     .rooms .card-title {
@@ -887,6 +903,10 @@ button:active {
 
     .footer-container {
         padding: 0 45px;
+    }
+
+    .rooms .slick-initialized .slick-slide {
+        margin: 0 25px;
     }
 }
 
@@ -897,7 +917,7 @@ button:active {
 
     .contacts {
         max-width: 100%;
-        padding: 29px 0 339px;
+        padding: 29px 0 338px;
     }
 
     .map-content {
@@ -1016,18 +1036,25 @@ button:active {
     .rooms .slick-initialized .slick-slide {
         position: static;
         display: block;
+        margin: 0 0 25px;
     }
 
     .slider-image {
         min-height: 192px;
         height: 100%;
-        width: 100%;
         border-radius: 10px 10px 0 0;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 290px;
     }
 
     .slider-content {
         padding: 18px 22px 25px 27px;
-        max-width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 290px;
     }
 
     .slider-content {
@@ -1124,7 +1151,7 @@ button:active {
     }
 
     .slick-dotted.slick-slider {
-        margin-bottom: 24px;
+        margin-bottom: 0;
     }
 
     .reviews-card {
