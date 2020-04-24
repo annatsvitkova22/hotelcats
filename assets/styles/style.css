@@ -50,6 +50,10 @@ h1, h2, h3, h4 {
     overflow: hidden
 }
 
+.header {
+    padding: 11px 0;
+}
+
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -57,7 +61,6 @@ h1, h2, h3, h4 {
 }
 
 .main-logo {
-    margin: 11px 0;
     line-height: 1;
     z-index: 1;
 }
@@ -66,12 +69,7 @@ h1, h2, h3, h4 {
     display: flex;
 }
 
-.list-item {
-    padding: 10px 15px;
-    color: #1A212F;
-}
-
-.list-item:last-child {
+.list-item:last-child .item-link{
     padding-right: 0;
 }
 
@@ -79,6 +77,7 @@ h1, h2, h3, h4 {
     font-weight: 500;
     font-size: 16px;
     color: #1A212F;
+    padding: 10px 15px;
 }
 
 .burger-menu {
@@ -156,12 +155,35 @@ h1, h2, h3, h4 {
     font-size: 20px;
 }
 
+.burger-menu .social-link { 
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.burger-menu .social-item:first-of-type .social-link {
+    margin-left: 0px;
+}
+
+.burger-menu .social-item:last-of-type .social-link {
+    margin-right: 0px;
+}
+
 .burger-menu  .list-item-number {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     color: #1A212F;
-    padding-top: 16px;
-    padding-bottom: 6px;
+    padding-top: 24px;
+    padding-bottom: 21px;
+    padding-left: 15px;
+}
+
+.burger-menu .social-icon {
+    width: 24px;
+}
+
+.contact-link:hover {
+    color: #FFFFFF;
+    transition: all 0.3s;
 }
 
 .burger-menu .icon {
@@ -174,8 +196,17 @@ h1, h2, h3, h4 {
     transition: all 0.3s;
 }
 
+.rooms-container .main-title {
+    margin: 5px 0 30px;
+}
+
 .menu-item.menu-active {
     display: block;
+}
+
+.social {
+    display: flex;
+    padding-left: 15px;
 }
 
 .menu-icon {
@@ -192,6 +223,9 @@ h1, h2, h3, h4 {
 
 .burger-menu .list-item {
     display: block;
+}
+
+.burger-menu .item-link {
     padding: 8px 15px 7px;
 }
 
@@ -218,6 +252,7 @@ h1, h2, h3, h4 {
     height: 50px;
     display: flex;
     align-items: center;
+    border: none;
     padding: 0 5px 0 27px;
 }
 
@@ -303,8 +338,7 @@ button:active {
 }
 
 .advantages-card {
-    max-width: 370px;
-    width: calc( ( 100% - 20px ) / 3 );
+    width: calc( ( 100% - 60px ) / 3 );
     padding: 30px 30px 24px;
     margin-top: 19px;
     min-height: 321px;
@@ -362,7 +396,7 @@ button:active {
 
 .rooms-wrapper {
     position: relative;
-    padding: 10px 50px 0 70px;
+    padding: 0 50px 0 70px;
 }
 
 .slider-card {
@@ -389,7 +423,6 @@ button:active {
 .slider-content {
     position: absolute;
     max-width: 500px;
-    width: 100%;
     padding: 30px 100px 40px;
     right: 0px;
     background-color: #ffffff;
@@ -530,7 +563,6 @@ button:active {
     display: flex;
     margin:20px 15px 20px 15px;
     max-width: 470px;
-    width: 100%;
     height: inherit;
 }
 
@@ -583,7 +615,6 @@ button:active {
 
 .contacts {
     max-width: 40.55555%;
-    width: 100%;
     padding: 56px 0 68px;
 }
 
@@ -591,13 +622,12 @@ button:active {
     max-width: 300px;
 }
 
-.footer .main-logo {
-    margin: 11px 0 10px;
+.top-footer {
+    padding: 11px 0 10px;
 }
 
 .map-content {
     max-width: 59.55555%;
-    width: 100%;
     position: absolute;
     top: 0;
     right: 0;
@@ -629,8 +659,8 @@ button:active {
     display: flex;
 }
 
-.icon {
-    margin-right: 20px;
+.social-link + .social-link { 
+    margin-left: 20px;
 }
 
 .card-info:last-of-type  .contact-small-title{
@@ -732,6 +762,10 @@ button:active {
 
     .banner-location {
         margin-bottom: 2px;
+    }
+
+    .social-link + .social-link { 
+        margin-left: 18px;
     }
 
     .banner-info {
@@ -898,6 +932,10 @@ button:active {
 
     .rooms-wrapper {
         padding: 0;
+    }
+
+    .rooms-container .main-title {
+        margin: 5px 0 20px;
     }
 
     .rooms .card-title {
@@ -1156,8 +1194,8 @@ button:active {
         margin: 30px 0 10px;
     }
 
-    .rooms-wrapper {
-        padding: 28px 0 0;
+    .rooms-container .main-title {
+        margin: 5px 0 48px;
     }
 
     .card-info:first-of-type .contact-small-title {
