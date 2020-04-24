@@ -687,7 +687,7 @@ button:active {
     padding: 14px;
 }
 
-.footer .footer-list-item:last-of-type .item-link:last-of-type {
+.footer .footer-item:last-of-type .item-link:last-of-type {
     padding-right: 0;
 }
 
@@ -762,10 +762,6 @@ button:active {
 
     .banner-location {
         margin-bottom: 2px;
-    }
-
-    .social-link + .social-link { 
-        margin-left: 18px;
     }
 
     .banner-info {
@@ -1027,13 +1023,16 @@ button:active {
         display: block;
     }
 
-    .footer-list-item {
+    .footer-item {
         display: flex;
         flex-direction: column;
     }
 
     .footer .menu-list {
+        display: block;
+        column-count: 2;
         padding-bottom: 25px;
+        padding-top: 7px;
     }
 
     .copyright {
@@ -1190,8 +1189,16 @@ button:active {
         margin-bottom: 5px;
     }
 
-    .footer .main-logo {
-        margin: 30px 0 10px;
+    .top-footer {
+        padding: 30px 0 0;
+    }
+
+    .footer-item:last-of-type {
+        margin-left: -22px;
+    }
+
+    .footer-item:nth-last-child(2) {
+        margin-left: -22px;
     }
 
     .rooms-container .main-title {
