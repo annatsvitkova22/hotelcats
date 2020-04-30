@@ -69,6 +69,11 @@ h1, h2, h3, h4 {
     display: flex;
 }
 
+.logo-icon:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
 .list-item:last-child .item-link{
     padding-right: 0;
 }
@@ -158,6 +163,11 @@ h1, h2, h3, h4 {
 .burger-menu .social-link { 
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
 }
 
 .burger-menu .social-item:first-of-type .social-link {
@@ -381,6 +391,10 @@ button:active {
     font-size: 16px;
     line-height: 1;
     margin: 0;
+}
+
+.slick-dots li button:hover:before {
+    color: #BFC3C8;
 }
 
 .schedule {
